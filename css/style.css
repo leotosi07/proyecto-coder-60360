@@ -177,6 +177,11 @@ li {
     color: white;
 }
 
+.menu__table-soda img,
+.menu__table-pizza img {
+    padding: 1rem;
+    width: 8rem;
+}
 
 .menu__table-content h3 {
     text-align: center;
@@ -386,6 +391,7 @@ footer {
         border-bottom: 1px dotted #ffffff;
         padding-bottom: 5px;
     }
+
     .soda h4,
     .soda p,
     .pizza h4,
