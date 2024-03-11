@@ -1,3 +1,14 @@
 // Tipografía base
+
+
+body {
+    font-family: $base-font-family
+}
+h2{
+    font-family: $heading-font-family;
+    font-size: $heading-font-size;
+    -webkit-text-stroke:$heading-font-stroke
+}
+
 // Estilos de títulos
 // Estilos para enlaces
