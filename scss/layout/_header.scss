@@ -1,1 +1,57 @@
 // Estilos para el encabezado
+/* Header */
+
+.logo {
+    min-width: 10%;
+    max-width: 30%;
+}
+
+
+nav {
+    background-color: black;
+    min-height: 8rem;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+li {
+    margin-bottom: 10px;
+}
+
+.subrayado {
+    display: inline-block;
+    text-decoration: none;
+    &:after {    content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ffffff;
+        transition: width .3s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+
+.activo {
+    font-weight: bolder;
+}   
+
+
+@media (min-width:992px) {
+    .nav-item {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+    }
+}

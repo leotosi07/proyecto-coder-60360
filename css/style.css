@@ -41,57 +41,12 @@ h2 {
   -webkit-text-stroke: 0.01rem #000;
 }
 
-/* Header */
-.logo {
-  min-width: 10%;
-  max-width: 30%;
-}
-
-nav {
-  background-color: black;
-  min-height: 8rem;
-}
-
-.nav-link {
-  color: white;
-}
-
-.navbar-nav {
-  padding: 1rem;
-  text-align: center;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.subrayado {
-  display: inline-block;
-  text-decoration: none;
-}
-.subrayado:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: width 0.3s;
-}
-.subrayado:hover::after {
-  width: 100%;
-}
-
-.activo {
-  font-weight: bolder;
-}
-
 /* Mobile */
 /* Main */
 .menu__main,
 .index__main {
   display: flex;
 }
-
 .menu__main-title,
 .index__main-title {
   display: flex;
@@ -99,6 +54,7 @@ li {
   min-height: 300px;
   justify-content: center;
   align-items: center;
+  /* Imagen para index, colocar en pagina*/
   background-image: url("../img/heading/index.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,17 +62,17 @@ li {
   border-bottom: 1rem solid #000;
   border-top: 1rem solid #000;
 }
-
-.menu__main-title {
-  background-image: url("../img/heading/menu.jpg");
-}
-
-.menu__main-title h2,
-.index__main-title h2 {
+.menu__main h2,
+.index__main h2 {
   margin: 0;
   color: #fff;
   padding: 40px;
   text-align: center;
+}
+
+/* Imagen para menu, colocar en pagina*/
+.menu__main-title {
+  background-image: url("../img/heading/menu.jpg");
 }
 
 .menu__table,
@@ -126,7 +82,6 @@ li {
   width: 100%;
   flex-wrap: wrap;
 }
-
 .menu__table-title,
 .index__aboutus-title {
   font-family: "Playfair Display", serif;
@@ -145,17 +100,14 @@ li {
   justify-content: center;
   align-items: center;
 }
-
 .index__aboutus-content h2 {
   color: #000;
 }
-
 .index__aboutus-content p {
   margin: 15px 0;
   color: #333;
   max-width: 60%;
 }
-
 .index__aboutus-content img {
   max-width: 50%;
   height: auto;
@@ -166,7 +118,6 @@ li {
   background-image: url(../img/fondo/wood-2045379_1920.jpg);
   background-size: auto;
 }
-
 .menu__table-content {
   display: grid;
   align-items: center;
@@ -176,14 +127,8 @@ li {
   height: auto;
   padding: 4rem;
   color: white;
+  text-align: center;
 }
-
-.menu__table-soda img,
-.menu__table-pizza img {
-  padding: 1rem;
-  width: 8rem;
-}
-
 .menu__table-content h3 {
   text-align: center;
   font-weight: bold;
@@ -192,12 +137,13 @@ li {
   text-decoration: underline;
 }
 
-.menu__table-content {
-  text-align: center;
+.menu__table-soda img,
+.menu__table-pizza img {
+  padding: 1rem;
+  width: 8rem;
 }
-
-.menu_table-soda-options,
-.menu_table-pizza-options {
+.menu__table-soda-options,
+.menu__table-pizza-options {
   display: grid;
   padding: 1rem;
   flex-wrap: wrap;
@@ -444,11 +390,6 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .nav-item {
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-  }
   .menu__main-title,
   .index__main-title {
     min-height: 500px;
@@ -484,5 +425,105 @@ footer {
     border-bottom: 1rem solid #000;
     background-repeat: no-repeat;
 } */
+/* Header */
+.logo {
+  min-width: 10%;
+  max-width: 30%;
+}
+
+nav {
+  background-color: black;
+  min-height: 8rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-nav {
+  padding: 1rem;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.subrayado {
+  display: inline-block;
+  text-decoration: none;
+}
+.subrayado:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s;
+}
+.subrayado:hover::after {
+  width: 100%;
+}
+
+.activo {
+  font-weight: bolder;
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+/*INDEX*/
+.index__main {
+  display: flex;
+}
+.index__main-title {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  /* Imagen para index, colocar en pagina*/
+  background-image: url("../img/heading/index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1rem solid #000;
+  border-top: 1rem solid #000;
+}
+.index__main h2 {
+  margin: 0;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/*Menu*/
+.menu__main {
+  display: flex;
+}
+.menu__main-title {
+  display: flex;
+  width: 100%;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+  /* Imagen para index, colocar en pagina*/
+  background-image: url("../img/heading/index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1rem solid #000;
+  border-top: 1rem solid #000;
+}
+.menu__main h2 {
+  margin: 0;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */

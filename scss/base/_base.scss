@@ -1,87 +1,41 @@
 // Estilos base generales
 
 
-
-/* Header */
-
-.logo {
-    min-width: 10%;
-    max-width: 30%;
-}
-nav {
-    background-color: black;
-    min-height: 8rem;
-}
-
-.nav-link {
-    color: white;
-}
-
-.navbar-nav {
-    padding: 1rem;
-    text-align: center;
-}
-
-
-
-li {
-    margin-bottom: 10px;
-}
-
-.subrayado {
-    display: inline-block;
-    text-decoration: none;
-    &:after {    content: '';
-        display: block;
-        width: 0;
-        height: 2px;
-        background: #ffffff;
-        transition: width .3s;
-    }
-    &:hover::after {
-        width: 100%;
-    }
-}
-
-
-.activo {
-    font-weight: bolder;
-}
-
 /* Mobile */
 /* Main */
 
 .menu__main,
 .index__main {
     display: flex;
-}
+    
+    &-title {
+        display: flex;
+        width: 100%;
+        min-height: 300px;
+        justify-content: center;
+        align-items: center;
+        /* Imagen para index, colocar en pagina*/
+        background-image: url('../img/heading/index.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 1rem solid #000;
+        border-top: 1rem solid #000;
+    }
+    h2{    
+        margin: 0;
+        color: #fff;
+        padding: 40px;
+        text-align: center;
 
-.menu__main-title,
-.index__main-title {
-    display: flex;
-    width: 100%;
-    min-height: 300px;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../img/heading/index.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-bottom: 1rem solid #000;
-    border-top: 1rem solid #000;
+    }
+    
 }
-
+/* Imagen para menu, colocar en pagina*/
 .menu__main-title {
     background-image: url('../img/heading/menu.jpg');
 }
 
-.menu__main-title h2,
-.index__main-title h2 {
-    margin: 0;
-    color: #fff;
-    padding: 40px;
-    text-align: center;
-}
 
 .menu__table,
 .index__aboutus {
@@ -89,85 +43,86 @@ li {
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    &-title {
+        font-family: 'Playfair Display', serif;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+    }
 }
 
-.menu__table-title,
-.index__aboutus-title {
-    font-family: 'Playfair Display', serif;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    width: 200px
+.index__aboutus{
+    &-content {
+        text-align: center;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            color: #000;
+        }
+
+        p {
+            margin: 15px 0;
+            color: #333;
+            max-width: 60%;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-top: 20px;
+        }
+    }
 }
 
-.index__aboutus-content {
-    text-align: center;
-    padding: 50px 0;
+.menu__{
+    &body{
+        background-image: url(../img/fondo/wood-2045379_1920.jpg);
+        background-size: auto;
+    }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    &table- {
+        &content{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(1, 80%);
+            width: 100%;
+            height: auto;
+            padding: 4rem;
+            color: white;
+            text-align: center;
+            h3{
+                text-align: center;
+                font-weight: bold;
+                font-style: italic;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-decoration: underline; 
+            }
+
+        }
+        
+    }
 }
 
-.index__aboutus-content h2 {
-    color: #000;
-}
-
-.index__aboutus-content p {
-    margin: 15px 0;
-    color: #333;
-    max-width: 60%;
-}
-
-.index__aboutus-content img {
-    max-width: 50%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.menu__body {
-    background-image: url(../img/fondo/wood-2045379_1920.jpg);
-    background-size: auto;
-}
-
-.menu__table-content {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(1, 80%);
-    width: 100%;
-    height: auto;
-    padding: 4rem;
-    color: white;
-}
-
-.menu__table-soda img,
-.menu__table-pizza img {
-    padding: 1rem;
-    width: 8rem;
-}
-
-.menu__table-content h3 {
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: underline;
-}
-
-.menu__table-content {
-    text-align: center;
-}
-
-.menu_table-soda-options,
-.menu_table-pizza-options {
-    display: grid;
-    padding: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.menu__table-soda,
+.menu__table-pizza{
+    img{
+        padding: 1rem;
+        width: 8rem;  
+    }
+    &-options{
+        display: grid;
+        padding: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .soda,
@@ -431,12 +386,6 @@ footer {
 }
 
 @media (min-width:992px) {
-    .nav-item {
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-    }
-
     .menu__main-title,
     .index__main-title {
         min-height: 500px;
