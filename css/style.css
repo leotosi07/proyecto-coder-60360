@@ -365,7 +365,6 @@ footer {
   padding: 40px;
   text-align: center;
 }
-
 .menu__table {
   display: flex;
   justify-content: center;
@@ -380,7 +379,6 @@ footer {
   text-align: center;
   width: 200px;
 }
-
 .menu__body {
   background-image: url(../img/fondo/wood-2045379_1920.jpg);
   background-size: auto;
@@ -403,14 +401,11 @@ footer {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-decoration: underline;
 }
-
-.menu__table-soda img,
-.menu__table-pizza img {
+.menu__table-soda img, .menu__table-pizza img {
   padding: 1rem;
   width: 8rem;
 }
-.menu__table-soda-options,
-.menu__table-pizza-options {
+.menu__table-soda-options, .menu__table-pizza-options {
   display: grid;
   padding: 1rem;
   flex-wrap: wrap;
@@ -431,26 +426,20 @@ footer {
   .menu__main-title h2 {
     font-size: 2.5em;
   }
-  .index__section2 {
-    background-attachment: fixed;
-    min-height: 400px;
-  }
-  .menu_table-soda-options div,
-  .menu_table-pizza-options div {
+  .menu__table-soda-options div, .menu__table-pizza-options div {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px dotted #ffffff;
     padding-bottom: 5px;
+  }
+  .menu__table-soda img, .menu__table-pizza img {
+    width: 12rem;
   }
   .soda h4,
   .soda p,
   .pizza h4,
   .pizza p {
     padding: 0.5rem;
-  }
-  .menu__table-soda img,
-  .menu__table-pizza img {
-    width: 12rem;
   }
 }
 @media (min-width: 992px) {
