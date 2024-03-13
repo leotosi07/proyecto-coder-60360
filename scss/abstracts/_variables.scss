@@ -1,5 +1,6 @@
 //colores
-
+$color-primary:#000;
+$color-secondary:#fff;
 
 
 
@@ -19,3 +20,7 @@ $heading-font-stroke:0.01rem #000;
 
 
 //espaciado
+
+
+// frame
+$border-frame: 1rem solid $color-primary;

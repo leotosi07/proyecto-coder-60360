@@ -22,3 +22,42 @@
         @content;
     }
 }
+
+//mixin para framing
+@mixin framing {
+    border-bottom:$border-frame;
+    border-top:$border-frame;
+}
+
+//mixin para propiedades de bg
+@mixin background-setting ($size:cover,$repeat:no-repeat,$position:center){
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+
+// mixin para banner
+@mixin main-frame ($url-img){
+    @include flex-box;
+    @include framing;
+    @include background-setting;
+    background-image: url($url-img);
+    width: 100%;
+    min-height: 300px;
+    h2{
+        margin:0;
+        color:$color-secondary;
+        padding: 40px;
+        text-align: center;
+    }
+    @include mq-tablet{
+        min-height: 400px;
+        background-attachment: fixed;
+        h2{
+            font-size:2.5em;
+        }
+    }
+    @include mq-desktop{
+        min-height: 500px;
+    }
+}

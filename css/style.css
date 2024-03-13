@@ -138,26 +138,37 @@ footer {
 /*INDEX*/
 .index__main {
   display: flex;
-}
-.index__main-title {
   display: flex;
-  width: 100%;
-  min-height: 300px;
   justify-content: center;
   align-items: center;
-  /* Imagen para index, colocar en pagina*/
-  background-image: url("../img/heading/index.jpg");
+  border-bottom: 1rem solid #000;
+  border-top: 1rem solid #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 1rem solid #000;
-  border-top: 1rem solid #000;
+  background-image: url("../img/heading/index.jpg");
+  width: 100%;
+  min-height: 300px;
 }
 .index__main h2 {
   margin: 0;
   color: #fff;
   padding: 40px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .index__main {
+    min-height: 400px;
+    background-attachment: fixed;
+  }
+  .index__main h2 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 992px) {
+  .index__main {
+    min-height: 500px;
+  }
 }
 .index__aboutus {
   display: flex;
@@ -290,13 +301,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .index__main-title {
-    min-height: 400px;
-    background-attachment: fixed;
-  }
-  .index__main-title h2 {
-    font-size: 2.5em;
-  }
   .index__section2 {
     background-attachment: fixed;
     min-height: 400px;
@@ -335,35 +339,42 @@ footer {
     max-width: 600px;
   }
 }
-@media (min-width: 992px) {
-  .index__main-title {
-    min-height: 500px;
-    background-attachment: fixed;
-  }
-}
 /*Menu*/
 .menu__main {
   display: flex;
 }
 .menu__main-title {
   display: flex;
-  width: 100%;
-  min-height: 300px;
   justify-content: center;
   align-items: center;
-  /* Imagen para index, colocar en pagina*/
-  background-image: url("../img/heading/menu.jpg");
+  border-bottom: 1rem solid #000;
+  border-top: 1rem solid #000;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 1rem solid #000;
-  border-top: 1rem solid #000;
+  background-image: url("../img/heading/menu.jpg");
+  width: 100%;
+  min-height: 300px;
 }
-.menu__main h2 {
+.menu__main-title h2 {
   margin: 0;
   color: #fff;
   padding: 40px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .menu__main-title {
+    min-height: 400px;
+    background-attachment: fixed;
+  }
+  .menu__main-title h2 {
+    font-size: 2.5em;
+  }
+}
+@media (min-width: 992px) {
+  .menu__main-title {
+    min-height: 500px;
+  }
 }
 .menu__table {
   display: flex;

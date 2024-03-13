@@ -4,26 +4,7 @@
         display: flex;
 
         &-title {
-            display: flex;
-            width: 100%;
-            min-height: 300px;
-            justify-content: center;
-            align-items: center;
-            /* Imagen para index, colocar en pagina*/
-            background-image: url('../img/heading/menu.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-bottom: 1rem solid #000;
-            border-top: 1rem solid #000;
-        }
-
-        h2 {
-            margin: 0;
-            color: #fff;
-            padding: 40px;
-            text-align: center;
-
+            @include main-frame ("../img/heading/menu.jpg");
         }
 
     }

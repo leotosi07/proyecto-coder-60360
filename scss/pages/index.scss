@@ -3,29 +3,7 @@
 .index__ {
     &main {
         display: flex;
-
-        &-title {
-            display: flex;
-            width: 100%;
-            min-height: 300px;
-            justify-content: center;
-            align-items: center;
-            /* Imagen para index, colocar en pagina*/
-            background-image: url('../img/heading/index.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-bottom: 1rem solid #000;
-            border-top: 1rem solid #000;
-        }
-
-        h2 {
-            margin: 0;
-            color: #fff;
-            padding: 40px;
-            text-align: center;
-
-        }
+        @include main-frame ("../img/heading/index.jpg")
 
     }
 
@@ -188,15 +166,6 @@
 
 @media(min-width:768px) {
     .index__ {
-        &main-title {
-            min-height: 400px;
-            background-attachment: fixed;
-
-            h2 {
-                font-size: 2.5em;
-            }
-        }
-
         &section2 {
             background-attachment: fixed;
             min-height: 400px;
@@ -241,11 +210,4 @@
         }
     }
 }
-
-
-    @media (min-width:992px) {
-        .index__main-title {
-            min-height: 500px;
-            background-attachment: fixed;
-        }
-    }
+    
