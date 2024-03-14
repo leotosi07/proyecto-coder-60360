@@ -1,1 +1,19 @@
 // Estilos para botones
+.btn-outline-dark {
+    margin-bottom: 2rem;
+}
+
+.btn-classic-round {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: $color-secondary;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+
+    &:hover {
+        background-color: #193d85;
+        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    }
+}

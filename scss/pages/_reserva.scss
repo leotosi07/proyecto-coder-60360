@@ -1,0 +1,8 @@
+/*Reserva de Mesa*/
+
+.reserva__{
+    &main{
+        @extend .main-frame;
+        background-image: url("../img/heading/reserva.jpg");
+    }
+}

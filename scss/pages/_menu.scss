@@ -4,16 +4,15 @@
         display: flex;
 
         &-title {
-            @include main-frame ("../img/heading/menu.jpg");
+            @extend .main-frame;
+            background-image:url("../img/heading/menu.jpg");
         }
 
     }
 
     &table {
-        display: flex;
-        justify-content: center;
+        @include flex-box(row,center,normal,wrap);
         width: 100%;
-        flex-wrap: wrap;
 
         &-title {
             font-family: 'Playfair Display', serif;

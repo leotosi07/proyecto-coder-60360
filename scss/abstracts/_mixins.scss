@@ -2,12 +2,22 @@
 
 //mixin para aplicar flex con variables
 
-@mixin flex-box ($justify:center, $align:center){
+@mixin flex-box ($direction:row,$justify:center, $align:center,$wrap:nowrap){
     display: flex;
+    flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
+    flex-wrap: $wrap;
 }
 
+@mixin grid($columns:1, $columnSize:1fr, $rows:1, $rowSize:1fr, $justify: center, $align: center,$gap:1rem ){    
+    display: grid;
+    grid-template-columns: repeat($columns, $columnSize);
+    grid-template-rows: repeat($rows, $rowSize);
+    justify-content: $justify;
+    align-items: $align;
+    grid-gap: $gap;
+}
 
 //mixin para mediaqueries
 
@@ -23,11 +33,7 @@
     }
 }
 
-//mixin para framing
-@mixin framing {
-    border-bottom:$border-frame;
-    border-top:$border-frame;
-}
+
 
 //mixin para propiedades de bg
 @mixin background-setting ($size:cover,$repeat:no-repeat,$position:center){
@@ -37,27 +43,3 @@
 }
 
 // mixin para banner
-@mixin main-frame ($url-img){
-    @include flex-box;
-    @include framing;
-    @include background-setting;
-    background-image: url($url-img);
-    width: 100%;
-    min-height: 300px;
-    h2{
-        margin:0;
-        color:$color-secondary;
-        padding: 40px;
-        text-align: center;
-    }
-    @include mq-tablet{
-        min-height: 400px;
-        background-attachment: fixed;
-        h2{
-            font-size:2.5em;
-        }
-    }
-    @include mq-desktop{
-        min-height: 500px;
-    }
-}

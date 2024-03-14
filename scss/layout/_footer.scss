@@ -2,14 +2,12 @@
 
 /*FOOTER*/
 footer {
-    display: flex;
+    @extend %framing;
+    @include flex-box(column,space-between,center,nowrap);
     background-color: #333;
-    color: #fff;
+    color: $color-secondary;
     padding: 20px;
-    flex-direction: column;
     text-align: center;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .contact-us,
@@ -30,9 +28,7 @@ footer {
 
 @media(min-width:768px) {
     footer {
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: row;
+        @include flex-box(row,space-around,center,nowrap);
         padding: 2rem;
     }
 

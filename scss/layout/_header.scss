@@ -8,12 +8,12 @@
 
 
 nav {
-    background-color: black;
+    background-color: $color-primary;
     min-height: 8rem;
 }
 
 .nav-link {
-    color: white;
+    color: $color-secondary;
 }
 
 .navbar-nav {
