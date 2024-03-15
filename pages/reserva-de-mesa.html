@@ -59,42 +59,56 @@
     </header>
     <main>
         <section class="reserva__main">
-            <h2>
-                Reserva <br>
-                de mesa
-            </h2>
-
+            <div class="reserva__main-title">
+                <h2>
+                    Reserva <br>
+                    de mesa
+                </h2>
+            </div>
         </section>
 
-        <section class="tablas">
-            <p>
-                Haz tu reserva con tiempo para poder conseguirte la mejor mesa para vos!!
-            </p>
-            <form action="#" method="post">
-                <div>
-                    <label for="fecha">Seleccione una fecha:</label>
-                    <input type="date" id="fecha" name="fecha">
-                </div>
-                <div>
-                    <label for="personas">Cantidad de comensales:</label>
-                    <input type="number" id="personas" name="personas">
-                </div>
-                <div>
-                    <label for="horario">Selecciona un horario:</label>
-                    <select id="horario" name="horario">
-                        <option value="9:00">9:00 AM</option>
-                        <option value="9:15">9:15 AM</option>
-                        <option value="9:30">9:30 AM</option>
-                    </select>
-                </div>
-                <div>
+        <section class="reserva__content">
+            <div class="reserva__content-title">
+                <h3>
+                    Reserva
+                </h3>
+            </div>
+            <div class="reserva__content-intro">
+                <p>
+                    Haz tu reserva con tiempo para poder conseguirte la mejor mesa para vos!!
+                </p>
+                <h2>
+                    Formulario:
+                </h2>
+
+            </div>
+            <div class="reserva__content-form">
+                <form action="#" method="post">
+                    <div class="reserva__content-form-1">
+                        <label for="fecha">Seleccione una fecha:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <div class="reserva__content-form-1">
+                        <label for="personas">Cantidad de comensales:</label>
+                        <input type="number" id="personas" name="personas">
+                    </div>
+                    <div class="reserva__content-form-2">
+                        <label for="horario">Selecciona un horario:</label>
+                        <select id="horario" name="horario">
+                            <option value="9:00">9:00 AM</option>
+                            <option value="9:15">9:15 AM</option>
+                            <option value="9:30">9:30 AM</option>
+                        </select>
+                    </div>
+            </div>
+            <!-- <div>
                     <label for="comentarios">Si tienes algun comentario adicional:</label>
                     <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
-                </div>
-                <!-- Botón de enviar -->
-                <div>
-                    <input type="submit" value="Enviar Reserva">
-                </div>
+                </div> -->
+            <!-- Botón de enviar -->
+            <div>
+                <input type="submit" value="Enviar Reserva">
+            </div>
             </form>
         </section>
     </main>

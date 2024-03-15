@@ -10,13 +10,12 @@
     flex-wrap: $wrap;
 }
 
-@mixin grid($columns:1, $columnSize:1fr, $rows:1, $rowSize:1fr, $justify: center, $align: center,$gap:1rem ){    
+@mixin grid($columns:1, $columnSize:1fr, $rows:1, $rowSize:1fr, $justify: center, $align: center ){    
     display: grid;
     grid-template-columns: repeat($columns, $columnSize);
     grid-template-rows: repeat($rows, $rowSize);
     justify-content: $justify;
     align-items: $align;
-    grid-gap: $gap;
 }
 
 //mixin para mediaqueries
@@ -41,5 +40,3 @@
     background-repeat: $repeat;
     background-position: $position;
 }
-
-// mixin para banner

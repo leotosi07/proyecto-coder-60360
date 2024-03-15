@@ -46,7 +46,7 @@ h2 {
   border-top: 1rem solid #000;
 }
 
-.titles, .index__aboutus-title {
+.titles, .reserva__content-title, .menu__table-title, .index__aboutus-title {
   font-family: "Playfair Display", serif;
   background-color: #000;
   color: #fff;
@@ -341,7 +341,6 @@ footer {
     grid-template-rows: repeat(2, 1fr);
     justify-content: 1rem;
     align-items: center;
-    grid-gap: 1rem;
   }
   .index__section-img2, .index__section-img1 {
     width: 90%;
@@ -375,14 +374,6 @@ footer {
   align-items: normal;
   flex-wrap: wrap;
   width: 100%;
-}
-.menu__table-title {
-  font-family: "Playfair Display", serif;
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  width: 200px;
 }
 .menu__body {
   background-image: url(../img/fondo/wood-2045379_1920.jpg);
@@ -456,6 +447,48 @@ footer {
 /*Reserva de Mesa*/
 .reserva__main {
   background-image: url("../img/heading/reserva.jpg");
+}
+.reserva__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reserva__content-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 80%;
+  padding: 2rem;
+}
+.reserva__content-intro p {
+  text-align: center;
+  padding: 2rem;
+}
+.reserva__content-intro h2 {
+  background-color: #ffcc00;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: solid black;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  padding: 1rem;
+}
+.reserva__content-intro h2:hover {
+  transform: rotateY(20deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.reserva__content-form-1 {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: normal;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */

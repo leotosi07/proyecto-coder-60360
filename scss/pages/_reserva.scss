@@ -1,8 +1,51 @@
 /*Reserva de Mesa*/
 
-.reserva__{
-    &main{
+.reserva__ {
+    &main {
         @extend .main-frame;
         background-image: url("../img/heading/reserva.jpg");
+    }
+
+    &content {
+        width: 100%;
+        @include flex-box(column, center, center, wrap);
+
+        &-title {
+            @extend .titles;
+        }
+
+        &-intro {
+            @include flex-box (column, center, center, nowrap);
+            max-width: 80%;
+            padding: 2rem;
+
+            p {
+                text-align: center;
+                padding: 2rem;
+            }
+
+            h2 {
+                background-color: #ffcc00;
+                border-radius: 8px;
+                text-align: center;
+                text-decoration: solid black;
+                transition: transform 0.5s;
+                transform-style: preserve-3d;
+                padding: 1rem;
+                &:hover {
+                    transform: rotateY(20deg);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+                }
+            }
+
+        }
+
+        &-form {
+            &-1 {
+                padding: 0.5rem;
+                @include flex-box (row, space-between, normal, nowrap);
+                
+            }
+        }
     }
 }
