@@ -32,6 +32,7 @@
                 transition: transform 0.5s;
                 transform-style: preserve-3d;
                 padding: 1rem;
+
                 &:hover {
                     transform: rotateY(20deg);
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
@@ -41,10 +42,55 @@
         }
 
         &-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: $form-bg-color;
+            border-radius: $form-border-radius;
+            box-shadow: $form-box-shadow;
+            margin-bottom: 3rem;
+
             &-1 {
-                padding: 0.5rem;
-                @include flex-box (row, space-between, normal, nowrap);
-                
+                margin-bottom: 20px;
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+
+                input[type="date"],
+                input[type="number"],
+                select {
+                    width: 100%;
+                    padding: $form-input-padding;
+                    border: $form-input-border;
+                    border-radius: $form-input-radius;
+                    font-size: $form-font-size;
+
+                    &:focus {
+                        outline: none;
+                        border-color: #007bff;
+                    }
+                }
+            }
+
+            &-2 {
+                button[type="button"] {
+                    width: 100%;
+                    padding: $form-input-padding;
+                    background-color: $form-submit-bg;
+                    color: $form-submit-color;
+                    border: none;
+                    border-radius: $form-input-radius;
+                    cursor: pointer;
+                    font-size: $form-font-size;
+                    transition: background-color 0.3s ease;
+        
+                    &:hover {
+                        background-color: $form-submit-hover-bg;
+                    }
+                }
             }
         }
     }
