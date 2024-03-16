@@ -13,12 +13,29 @@
     margin-bottom: 10px;
 
     &:hover {
-        background-color: #193d85;
+        background-color: $btn-classic-hover;
         box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
     }
 }
 
-//boton de summit agregar en entrega final la animacion
+//boton de summit 
+.btn-send{
+    width: 100%;
+    padding: $form-input-padding;
+    background-color: $form-submit-bg;
+    color: $form-submit-color;
+    border: none;
+    border-radius: $form-input-radius;
+    cursor: pointer;
+    font-size: $form-font-size;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $form-submit-hover-bg;
+        animation: pulse 1s infinite;
+    }
+}
+
 // Animación para el botón de enviar
 @keyframes pulse {
     0% {

@@ -41,7 +41,7 @@ h2 {
   -webkit-text-stroke: 0.01rem #000;
 }
 
-.index__section2, footer, .main-frame, .pedido__main, .reserva__main, .menu__main-title, .index__main {
+.index__section2, footer, .main-frame, .hu__main, .pedido__main, .reserva__main, .menu__main-title, .index__main {
   border-bottom: 1rem solid #000;
   border-top: 1rem solid #000;
 }
@@ -55,7 +55,7 @@ h2 {
   width: 200px;
 }
 
-.main-frame, .pedido__main, .reserva__main, .menu__main-title, .index__main {
+.main-frame, .hu__main, .pedido__main, .reserva__main, .menu__main-title, .index__main {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -67,23 +67,23 @@ h2 {
   width: 100%;
   min-height: 300px;
 }
-.main-frame h2, .pedido__main h2, .reserva__main h2, .menu__main-title h2, .index__main h2 {
+.main-frame h2, .hu__main h2, .pedido__main h2, .reserva__main h2, .menu__main-title h2, .index__main h2 {
   margin: 0;
   color: #fff;
   padding: 40px;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .main-frame, .pedido__main, .reserva__main, .menu__main-title, .index__main {
+  .main-frame, .hu__main, .pedido__main, .reserva__main, .menu__main-title, .index__main {
     min-height: 400px;
     background-attachment: fixed;
   }
-  .main-frame h2, .pedido__main h2, .reserva__main h2, .menu__main-title h2, .index__main h2 {
+  .main-frame h2, .hu__main h2, .pedido__main h2, .reserva__main h2, .menu__main-title h2, .index__main h2 {
     font-size: 2.5em;
   }
 }
 @media (min-width: 992px) {
-  .main-frame, .pedido__main, .reserva__main, .menu__main-title, .index__main {
+  .main-frame, .hu__main, .pedido__main, .reserva__main, .menu__main-title, .index__main {
     min-height: 500px;
   }
 }
@@ -104,6 +104,22 @@ h2 {
 .btn-classic-round:hover, .index__section2-btn1:hover {
   background-color: #193d85;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.btn-send, .reserva__content-form-2 button[type=button] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.btn-send:hover, .reserva__content-form-2 button[type=button]:hover {
+  background-color: #0056b3;
+  animation: pulse 1s infinite;
 }
 
 @keyframes pulse {
@@ -302,7 +318,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
 }
-.index__TP {
+.index__TP, .hu__TP {
   display: flex;
   flex-direction: column;
   justify-content: normal;
@@ -310,7 +326,7 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
-.index__TP-title {
+.index__TP-title, .hu__TP-title {
   font-family: "Playfair Display", serif;
   background-color: #000;
   color: #fff;
@@ -318,11 +334,11 @@ footer {
   text-align: center;
   width: 200px;
 }
-.index__TP-contenido {
+.index__TP-contenido, .hu__TP-contenido {
   text-align: center;
   padding: 2rem;
 }
-.index__TP-contenido h3 {
+.index__TP-contenido h3, .hu__TP-contenido h3 {
   text-decoration: underline black;
   font-weight: bold;
 }
@@ -460,6 +476,7 @@ footer {
   background-image: url("../img/heading/reserva.jpg");
 }
 .reserva__content {
+  background-color: #f3eeee;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -525,25 +542,14 @@ footer {
   outline: none;
   border-color: #007bff;
 }
-.reserva__content-form-2 button[type=button] {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-.reserva__content-form-2 button[type=button]:hover {
-  background-color: #0056b3;
-  animation: pulse 1s infinite;
-}
-
 /*Pedido-Online*/
 .pedido__main {
   background-image: url("../img/heading/pedido.jpg");
+}
+
+/*Horario y Ubicacion*/
+.hu__main {
+  background-image: url("../img/heading/hu1.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */

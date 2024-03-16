@@ -1,0 +1,19 @@
+/*Horario y Ubicacion*/
+
+.hu__ {
+    &main {
+        @extend .main-frame;
+        background-image: url("../img/heading/hu1.jpg");
+    }
+    &TP{
+        @extend .index__TP;
+        &-title {
+            @extend .index__TP-title;
+        }
+        &-contenido{
+            @extend .index__TP-contenido;
+        }
+
+
+    }
+}
