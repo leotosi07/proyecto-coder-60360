@@ -133,6 +133,23 @@ h2 {
     transform: scale(1);
   }
 }
+.pedido__content .card .agregar-carrito {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.pedido__content .card .agregar-carrito:hover {
+  background-color: #45a049;
+}
+
 /* Header */
 .logo {
   min-width: 10%;
@@ -547,6 +564,58 @@ footer {
   background-image: url("../img/heading/pedido.jpg");
 }
 
+.pedido__content {
+  background-color: #f3eeee;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .pedido__content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .pedido__content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    align-items: center;
+  }
+}
+.pedido__content .card {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  justify-self: center;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.pedido__content .card .nombre {
+  grid-row: span 2;
+  font-size: 1.2em;
+  margin-top: 0;
+  padding: 1rem;
+}
+.pedido__content .card .precio {
+  grid-row: 3;
+  color: #555;
+}
 /*Horario y Ubicacion*/
 .hu__main {
   background-image: url("../img/heading/hu1.jpg");

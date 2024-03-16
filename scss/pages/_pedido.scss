@@ -5,3 +5,50 @@
         background-image: url("../img/heading/pedido.jpg");
     }
 }
+
+
+
+.pedido__content {
+    background-color: $color-background-primary;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr); // Cambiamos a 2 columnas
+    gap: 20px;
+    padding: 2rem;
+    @include mq-tablet{
+        @include grid (2,auto,4,auto);
+    }
+    @include mq-desktop{
+        @include grid (3,auto,4,auto);
+    }
+
+    .card {
+        @include grid (1,auto,4,auto);
+        height: 100%;
+        justify-self: center;
+        max-width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+
+
+        .nombre {
+            grid-row: span 2;
+            font-size: 1.2em;
+            margin-top: 0;
+            padding: 1rem;
+        }
+
+        .precio {
+            grid-row: 3;
+            color: #555;
+        }
+
+        .agregar-carrito {
+            @extend %agregar-carrito;
+        }
+    }
+}
