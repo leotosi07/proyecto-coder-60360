@@ -75,7 +75,7 @@
                 }
             }
 
-            &-2 {
+            &-2 { 
                 button[type="button"] {
                     width: 100%;
                     padding: $form-input-padding;
@@ -89,6 +89,7 @@
         
                     &:hover {
                         background-color: $form-submit-hover-bg;
+                        animation: pulse 1s infinite;
                     }
                 }
             }

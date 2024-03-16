@@ -1,0 +1,7 @@
+/*Pedido-Online*/
+.pedido__ {
+    &main {
+        @extend .main-frame;
+        background-image: url("../img/heading/pedido.jpg");
+    }
+}
