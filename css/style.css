@@ -471,6 +471,7 @@ footer {
     justify-content: space-between;
     border-bottom: 1px dotted #ffffff;
     padding-bottom: 5px;
+    width: 500px;
   }
   .menu__table-soda img, .menu__table-pizza img {
     width: 12rem;
