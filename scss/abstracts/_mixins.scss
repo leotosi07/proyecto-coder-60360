@@ -2,7 +2,7 @@
 
 //mixin para aplicar flex con variables
 
-@mixin flex-box ($direction:row,$justify:center, $align:center,$wrap:nowrap){
+@mixin flex-box ($direction: row, $justify: center, $align: center, $wrap: nowrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
@@ -10,7 +10,7 @@
     flex-wrap: $wrap;
 }
 
-@mixin grid($columns:1, $columnSize:1fr, $rows:1, $rowSize:1fr, $justify: center, $align: center ){    
+@mixin grid($columns: 1, $columnSize: 1fr, $rows: 1, $rowSize: 1fr, $justify: center, $align: center) {
     display: grid;
     grid-template-columns: repeat($columns, $columnSize);
     grid-template-rows: repeat($rows, $rowSize);
@@ -21,13 +21,13 @@
 //mixin para mediaqueries
 
 @mixin mq-tablet {
-    @media (min-width:768px){
+    @media (min-width:768px) {
         @content;
     }
 }
 
 @mixin mq-desktop {
-    @media (min-width:992px){
+    @media (min-width:992px) {
         @content;
     }
 }
@@ -35,8 +35,34 @@
 
 
 //mixin para propiedades de bg
-@mixin background-setting ($size:cover,$repeat:no-repeat,$position:center){
+@mixin background-setting ($size: cover, $repeat: no-repeat, $position: center) {
     background-size: $size;
     background-repeat: $repeat;
     background-position: $position;
+}
+
+//Animacion de imagen
+
+@keyframes scroll_resize {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@mixin animate-image($animation-name) {
+
+	view-timeline-name: --image;
+	view-timeline-axis: block;
+
+	animation-timeline: --image;
+	animation-name: $animation-name;
+
+	animation-range: entry 25% cover 30%;
+	animation-fill-mode: both;
 }

@@ -1,3 +1,13 @@
+@keyframes scroll_resize {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
 /* Reset CSS */
 * {
   box-sizing: border-box;
@@ -273,9 +283,14 @@ footer {
   max-width: 60%;
 }
 .index__aboutus-content img {
-  max-width: 50%;
-  height: auto;
+  max-width: 40%;
   margin-top: 20px;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: scroll_resize;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
 }
 .index__section {
   display: flex;
@@ -383,7 +398,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-content: 1rem;
+    justify-content: center;
     align-items: center;
   }
   .index__section-img2, .index__section-img1 {

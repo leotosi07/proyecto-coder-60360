@@ -30,9 +30,9 @@
             }
 
             img {
-                max-width: 50%;
-                height: auto;
+                max-width: 40%;
                 margin-top: 20px;
+                @include animate-image(scroll_resize);
             }
         }
     }
@@ -152,7 +152,7 @@
         margin-right: 5%;
         padding: 1rem;
         border-radius: 1rem;
-        @include grid (2, 1fr, 2, 1fr, 1rem);
+        @include grid (2, 1fr, 2, 1fr);
 
         &-img2,
         &-img1 {
