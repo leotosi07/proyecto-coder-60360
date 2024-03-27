@@ -629,7 +629,7 @@ footer {
   padding: 1rem;
 }
 .pedido__content .card .precio {
-  grid-row: 3;
+  grid-row: 4;
   color: #555;
 }
 /*Horario y Ubicacion*/
