@@ -17,14 +17,14 @@
     gap: 20px;
     padding: 2rem;
     @include mq-tablet{
-        @include grid (2,auto,4,auto);
+        @include grid (2,auto,8,auto);
     }
     @include mq-desktop{
-        @include grid (3,auto,4,auto);
+        @include grid (3,auto,8,auto);
     }
 
     .card {
-        @include grid (1,auto,4,auto);
+        @include grid (1,auto,8,auto);
         height: 100%;
         justify-self: center;
         max-width: 200px;
@@ -34,21 +34,27 @@
         padding: 20px;
         text-align: center;
 
-
+        .img{
+            grid-row: span 3;        
+            padding: 1rem;   
+        }
         .nombre {
-            grid-row: span 2;
+            grid-row: 4 / span 3;
             font-size: 1.2em;
             margin-top: 0;
             padding: 1rem;
         }
 
         .precio {
-            grid-row: 4;
+            grid-row: 7;
             color: #555;
+            align-self: center;
         }
 
         .agregar-carrito {
+            grid-row: 8;
             @extend %agregar-carrito;
+            align-self: end;
         }
     }
 }

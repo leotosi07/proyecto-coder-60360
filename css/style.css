@@ -274,7 +274,7 @@ footer {
   align-items: center;
   flex-wrap: nowrap;
 }
-.index__aboutus-content h2 {
+.index__aboutus-content h4 {
   color: #000;
 }
 .index__aboutus-content p {
@@ -593,7 +593,7 @@ footer {
   .pedido__content {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
     justify-content: center;
     align-items: center;
   }
@@ -602,7 +602,7 @@ footer {
   .pedido__content {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
     justify-content: center;
     align-items: center;
   }
@@ -610,7 +610,7 @@ footer {
 .pedido__content .card {
   display: grid;
   grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(8, auto);
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -622,16 +622,26 @@ footer {
   padding: 20px;
   text-align: center;
 }
+.pedido__content .card .img {
+  grid-row: span 3;
+  padding: 1rem;
+}
 .pedido__content .card .nombre {
-  grid-row: span 2;
+  grid-row: 4/span 3;
   font-size: 1.2em;
   margin-top: 0;
   padding: 1rem;
 }
 .pedido__content .card .precio {
-  grid-row: 4;
+  grid-row: 7;
   color: #555;
+  align-self: center;
 }
+.pedido__content .card .agregar-carrito {
+  grid-row: 8;
+  align-self: end;
+}
+
 /*Horario y Ubicacion*/
 .hu__main {
   background-image: url("../img/heading/hu1.jpg");

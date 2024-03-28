@@ -19,7 +19,7 @@
             padding: 50px 0;
             @include flex-box(column, center, center, nowrap);
 
-            h2 {
+            h4 {
                 color: $color-primary;
             }
 
