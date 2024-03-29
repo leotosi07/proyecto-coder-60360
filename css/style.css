@@ -583,9 +583,12 @@ footer {
 .pedido__content {
   background-color: #f3eeee;
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, auto);
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 2rem;
 }
@@ -593,7 +596,7 @@ footer {
   .pedido__content {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(3, auto);
     justify-content: center;
     align-items: center;
   }
@@ -602,7 +605,7 @@ footer {
   .pedido__content {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
     justify-content: center;
     align-items: center;
   }
@@ -610,7 +613,7 @@ footer {
 .pedido__content .card {
   display: grid;
   grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(3, 0.5fr);
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -623,22 +626,23 @@ footer {
   text-align: center;
 }
 .pedido__content .card .img {
-  grid-row: span 3;
+  grid-row: 2/3;
   padding: 1rem;
 }
 .pedido__content .card .nombre {
-  grid-row: 4/span 3;
+  grid-row: 2;
   font-size: 1.2em;
   margin-top: 0;
-  padding: 1rem;
+  padding: 1em;
 }
 .pedido__content .card .precio {
-  grid-row: 7;
+  grid-row: 3/4;
   color: #555;
   align-self: center;
+  grid-template-rows: repeat(3, 0.5fr);
 }
 .pedido__content .card .agregar-carrito {
-  grid-row: 8;
+  grid-row: 4;
   align-self: end;
 }
 
